@@ -53,17 +53,25 @@
             font-weight: bold;
             margin-bottom: 4px;
         }
-        .value{
-            color: var(--very-light-pink);
-            font-size: var(--md);
-            margin:8px 0 32px 0;
-        }
-
-        .secondary-button{
-            background-color: var(--white);
+        .input{
+            background-color: var(--text-input-field);
+            border: none;
             border-radius: 8px;
-            border: 1px solid var(--hospital-green);
-            color: var(--hospital-green);
+            height: 30px;
+            font-size: var(--md);
+            padding: 6px;
+            margin-bottom: 12PX;
+        }
+        .input-name,
+        .input-email,
+        .input-password{
+            margin-bottom: 20px;
+        }
+        .secondary-button{
+            background-color: var(--hospital-green);
+            border-radius: 8px;
+            border: none;
+            color: var(--white);
             width: 100%;
             cursor: pointer;
             font-size: var(--md);
@@ -93,16 +101,16 @@
             <form action="/" class="form">
                 <div>
                     <label for="name" class="label">Email address</label>
-                    <p class="value">Kevin Deras</p>
+                    <input type="text" id="name" placeholder="Kevin Deras" class="input input-name">
 
                     <label for="email" class="label">Email address</label>
-                    <p class="value">kevinmejia_2010@hotmail.com</p>
+                    <input type="email" id="email" placeholder="kevinmejia_2010@hotmail.com" class="input input-email">
 
                     <label for="password" class="label">Password</label>
-                    <p class="value">*********</p>
+                    <input type="password" id="password" placeholder="*********" class="input input-password">
                 </div>
 
-                <input type="submit" value="Edit" class="secondary-button login-button">
+                <input type="submit" value="Save" class="secondary-button login-button">
             </form>
         </div>
     </div>
